@@ -19,7 +19,7 @@ const Vendedor = {
   update: async (id, nombre, email, telefono) => {
     const { rows } = await db.query(
       'UPDATE Vendedor SET nombre = $1, email = $2, telefono = $3 WHERE id = $4 RETURNING *',
-      [nombre, email, id]
+      [nombre, email,telefono, id]
     );
     return rows[0];
   },
