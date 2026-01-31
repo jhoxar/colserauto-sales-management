@@ -5,7 +5,7 @@ import { Vendedor, Producto, Venta } from './interfaces';
 
 @Injectable({ providedIn: 'root' })
 export class ApiService {
-  private url = 'http://localhost:3000/api';
+  private url = 'https://colserauto-backend.onrender.com/api';
 
   constructor(private http: HttpClient) {}
 
